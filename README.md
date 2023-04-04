@@ -51,13 +51,13 @@ Options:
                                   copy it or customize the installation.
   --help                          Show this message and exit.
 """
-# Here is an example command to run the typer app:
-# Interval value given in seconds
-# Temperature values are floating point numbers
-#
+Here is an example command to run the typer app:
+Interval value given in seconds
+Temperature values are floating point numbers
+
 # Example command:
-# python test_csv_generator.py --ruuvi-inside-temp-end 60 15 30 21.5 36 10 12 35 50 4000 0.01 data.csv
-#
+python test_csv_generator.py --ruuvi-inside-temp-end 60 15 30 21.5 36 10 12 35 50 4000 0.01 data.csv
+
 # Note: Negative temperatures!
-# python test_csv_generator.py 15 30 -- -21.5 36 10 12 35 50 4000 0.01 data.csv
+python test_csv_generator.py 15 30 -- -21.5 36 10 12 35 50 4000 0.01 data.csv
 
