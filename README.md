@@ -4,7 +4,7 @@ Repository for delivering codes
 test_csv_generator.py      Main app to generate csv-file
 test_csv_writer.py         Writes measurements points from csv-file to local db in Raspberry PI
 
-"""
+# Usage
 Usage: test_csv_generator.py [OPTIONS] COUNT INTERVAL 
                             RUUVI_INSIDE_TEMP_START RUUVI_INSIDE_HUM_START 
                             RUUVI_OUTSIDE_TEMP_START RUUVI_OUTSIDE_HUM_START 
@@ -50,7 +50,7 @@ Options:
                                   Show completion for the specified shell, to
                                   copy it or customize the installation.
   --help                          Show this message and exit.
-"""
+
 Here is an example command to run the typer app:
 Interval value given in seconds
 Temperature values are floating point numbers
