@@ -1,17 +1,14 @@
 # manna_tests
 Repository for delivering codes
 
-test_csv_generator.py      Main app to generate csv-file
+test_csv_generator.py       Main app to generate csv-file.
 
-test_csv_writer.py         Writes measurements points from csv-file to local db in Raspberry PI
+test_csv_empty_values.py    App to write empty values to columns selected by the user.
+
+test_csv_writer.py          Writes measurements points from csv-file to local db in Raspberry PI
 
 # Usage
-Usage: test_csv_generator.py [OPTIONS] COUNT INTERVAL 
-                            RUUVI_INSIDE_TEMP_START RUUVI_INSIDE_HUM_START 
-                            RUUVI_OUTSIDE_TEMP_START RUUVI_OUTSIDE_HUM_START 
-                            HUM1000_TEMP_START HUM1000_HUM_START 
-                            CO2_START 
-                            FILENAME
+Usage: test_csv_generator.py [OPTIONS] COUNT INTERVAL RUUVI_INSIDE_TEMP_START RUUVI_INSIDE_HUM_START RUUVI_OUTSIDE_TEMP_START RUUVI_OUTSIDE_HUM_START HUM1000_TEMP_START HUM1000_HUM_START CO2_START FILENAME
 
 Arguments:
   COUNT                     The count of the test value lines in csv.
