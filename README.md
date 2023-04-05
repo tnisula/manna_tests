@@ -62,5 +62,8 @@ python test_csv_generator.py --ruuvi-inside-temp-end 60 15 30 21.5 36 10 12 35 5
 # Note: Negative temperatures!
 python test_csv_generator.py 15 30 -- -21.5 36 10 12 35 50 4000 0.01 data.csv
 
-# Writing values to Raspberry
-python test_csv_writer.py 30
+# Writing empty values to the selected columns in csv file
+python test_csv_empty_values.py data.csv output.csv --empty_columns=2,4,6,8
+
+# Writing values from data.csv file to Raspberry using 30 seconds interval
+python test_csv_writer.py data.csv 30
