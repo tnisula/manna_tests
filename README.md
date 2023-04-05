@@ -13,9 +13,7 @@ Usage: test_csv_generator.py [OPTIONS] COUNT INTERVAL RUUVI_INSIDE_TEMP_START RU
 Arguments:
 
 COUNT The count of the test value lines in csv. [required]
-
 INTERVAL The time interval in seconds. [required]
-
 RUUVI_INSIDE_TEMP_START The start value of the ruuvi inside temperature. [required]
 
   RUUVI_INSIDE_HUM_START    The start value of the ruuvi inside humidity.
