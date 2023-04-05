@@ -47,19 +47,19 @@ class CsvHandler:
             measurement_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
             # print(measurement_time)
 
-            if sensor.get("SENSOR_MODEL") == "ruuvi" and sensor.get("SENSOR_LOCATION") == "inside":
-                fields = {'temperature': float(row['ruuvi_inside_temp']),
-                          'humidity': float(row['ruuvi_inside_hum'])}
-            elif sensor.get("SENSOR_MODEL") == "ruuvi" and sensor.get("SENSOR_LOCATION") == "outside":
-                fields = {'temperature': float(row['ruuvi_outside_temp']),
-                          'humidity': float(row['ruuvi_outside_hum'])}
+            if sensor.get("SENSOR_MODEL") == "ruuvi"  and sensor.get("SENSOR_LOCATION") == "inside":
+                fields = {'temperature': float(row['ruuvi_inside_temp'] if row['ruuvi_inside_temp'] else 0), 
+                          'humidity': float(row['ruuvi_inside_hum'] if row['ruuvi_inside_hum'] else 0)}
+            elif sensor.get("SENSOR_MODEL") == "ruuvi"  and sensor.get("SENSOR_LOCATION") == "outside":
+                fields = {'temperature': float(row['ruuvi_outside_temp'] if row['ruuvi_outside_temp'] else 0), 
+                          'humidity': float(row['ruuvi_outside_hum'] if row['ruuvi_outside_hum'] else 0)}
             elif sensor.get("SENSOR_MODEL") == "HUM1000":
-                fields = {'temperature': float(row['hum1000_temperature']),
-                          'humidity': float(row['hum1000_humidity'])}
+                fields = {'temperature': float(row['hum1000_temperature'] if row['hum1000_temperature'] else 0),
+                          'humidity': float(row['hum1000_humidity'] if row['hum1000_humidity'] else 0)}
             elif sensor.get("SENSOR_MODEL") == "co2meter":
-                fields = {'co2': float(row['co2meter'])}
+                fields = {'co2': float(row['co2meter'] if row['co2meter'] else 0)}
             elif sensor.get("SENSOR_MODEL") == "ACC1000":
-                fields = {'acc': float(row['acc1000'])}
+                fields = {'acc': float(row['acc1000'] if row['acc1000'] else 0)}
 
             # print(fields)
             measurement_tags.update({
