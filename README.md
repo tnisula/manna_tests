@@ -12,23 +12,17 @@ Usage: test_csv_generator.py [OPTIONS] COUNT INTERVAL RUUVI_INSIDE_TEMP_START RU
 
 Arguments:
 
-COUNT The count of the test value lines in csv. [required] INTERVAL The time interval in seconds. [required]
-RUUVI_INSIDE_TEMP_START The start value of the ruuvi inside temperature. [required]
-
-  RUUVI_INSIDE_HUM_START    The start value of the ruuvi inside humidity.
-                            [required]
-  RUUVI_OUTSIDE_TEMP_START  The start value of the ruuvi outside temperature.
-                            [required]
-  RUUVI_OUTSIDE_HUM_START   The start value of the ruuvi outside humidity.
-                            [required]
-  HUM1000_TEMP_START        The start value of the hum1000 temperature.
-                            [required]
-  HUM1000_HUM_START         The start value of the hum1000 humidity.
-                            [required]
-  CO2_START                 The start value of the co2meter.  [required]
-  ACC1000_START             The start value for the ACC1000 sensor.
-                            [required]
-  FILENAME                  The filename of the csv file  [required]
+COUNT The count of the test value lines in csv. [required] 
+INTERVAL The time interval in seconds. [required]
+RUUVI_INSIDE_TEMP_START		The start value of the ruuvi inside temperature. [required]
+RUUVI_INSIDE_HUM_START		The start value of the ruuvi inside humidity. [required]
+RUUVI_OUTSIDE_TEMP_START	The start value of the ruuvi outside temperature. [required]
+RUUVI_OUTSIDE_HUM_START   The start value of the ruuvi outside humidity. [required]
+HUM1000_TEMP_START        The start value of the hum1000 temperature. [required]
+HUM1000_HUM_START         The start value of the hum1000 humidity. [required]
+CO2_START                 The start value of the co2meter.  [required]
+ACC1000_START             The start value for the ACC1000 sensor. [required]
+FILENAME                  The filename of the csv file  [required]
 
 Options:
   --ruuvi-inside-temp-end FLOAT   The end value of the ruuvi inside
