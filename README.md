@@ -11,8 +11,11 @@ test_csv_writer.py          Writes measurements points from csv-file to local db
 Usage: test_csv_generator.py [OPTIONS] COUNT INTERVAL RUUVI_INSIDE_TEMP_START RUUVI_INSIDE_HUM_START RUUVI_OUTSIDE_TEMP_START RUUVI_OUTSIDE_HUM_START HUM1000_TEMP_START HUM1000_HUM_START CO2_START FILENAME
 
 Arguments:
+
 COUNT The count of the test value lines in csv. [required]
+
 INTERVAL The time interval in seconds. [required]
+
 RUUVI_INSIDE_TEMP_START The start value of the ruuvi inside temperature. [required]
 
   RUUVI_INSIDE_HUM_START    The start value of the ruuvi inside humidity.
